@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.tableButton{
+  border-radius: 0.25rem;
+  margin-right: 0.75rem;
+  border: yellow;
+cursor: pointer;
+}
+
+.add-users {
+  width: 7.8rem;
+  height: 2.25rem;
+  margin: 0.5rem;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.add-users.inactive {
+  width: 3.8rem;
+  transition: width 0.2s ease-in;
+  height: 2.25rem;
+  margin: 0.5rem;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.add-users:hover {
+  /* box-shadow: 2px 1px 1px 2px rgb(184, 180, 180); */
+  transform: scale(1.02);
+  transition: all 1s ease;
+}
