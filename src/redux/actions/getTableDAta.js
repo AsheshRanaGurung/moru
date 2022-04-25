@@ -19,7 +19,7 @@ export const getData = () => async (dispatch) => {
     // const url = "https://electronic-ecommerce.herokuapp.com/api/v1/product";
 
     const response = await axios.get(url);
-    console.log(response.data.data.product);
+
     dispatch({
       type: GET_TABLE_DATA_SUCCESS,
       payload: response,

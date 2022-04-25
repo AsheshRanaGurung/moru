@@ -13,6 +13,7 @@ import {
   EDIT_THIS_POST_FAIL,
   ADD_NEW_POST,
   ADD_NEW_POST_SUCCESS,
+  ADD_NEW_POST_FAIL,
 } from "../constants";
 
 export const fetchProductReducer = (

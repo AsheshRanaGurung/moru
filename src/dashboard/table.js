@@ -62,7 +62,12 @@ const ReactTable = () => {
           <button
             className="tableButton"
             style={{ color: "#e78787" }}
-            onClick={() => deleteThisUser(row.original.id)}
+            onClick={() => {
+              var check = window.confirm("Are you sure you want to delete?");
+              if (check) {
+                deleteThisUser(row.original.id);
+              }
+            }}
           >
             <DeleteIcon />
           </button>
@@ -115,9 +120,9 @@ const ReactTable = () => {
       data: data || [],
     });
 
-  useEffect(() => {
-    // dispatch(fetchUser(userInfo));
-  }, []);
+  // useEffect(() => {
+  //   // dispatch(fetchUser(userInfo));
+  // }, []);
 
   return (
     <div>

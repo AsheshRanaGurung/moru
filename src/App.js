@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getData());
-  }, [success, addsuccess, updatesuccess]);
+  }, []);
   return (
     <>
       <ToastContainer
